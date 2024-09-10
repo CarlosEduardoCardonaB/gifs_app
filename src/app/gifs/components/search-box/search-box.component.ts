@@ -11,7 +11,6 @@ import { GifsService } from '../../../services/gifs.services';
     (keyup.enter)="searchTag()"
     #txtTagInput
     >
-
   `
 })
 
@@ -37,3 +36,5 @@ export class SearchBoxComponent {
     //console.log(newTag)
   }
 }
+
+

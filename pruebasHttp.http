@@ -1,0 +1,1 @@
+GET https://api.giphy.com/v1/gifs/search?api_key=xEMH5UFOnXxK6F5gv728qob0D6C3D7DG&q=valorant&limit=10
