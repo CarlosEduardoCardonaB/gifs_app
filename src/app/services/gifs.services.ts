@@ -15,6 +15,7 @@ export class GifsService {
 
 
   constructor(private http: HttpClient) {
+    //lo del constructor se llama cuando se carga la página la primera vez
     this.loadLocalStorage();
     console.log('Gifs services ready');
 
