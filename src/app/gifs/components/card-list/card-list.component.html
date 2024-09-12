@@ -1,12 +1,29 @@
 <div class="row">
-  <div *ngFor="let gif of gifs" class="col-md-3 col-sm-6">
+  <!-- <div *ngFor="let gif of gifs" class="col-md-3 col-sm-6">
     <div class="card mb-2 text-center bg-dark">
-      <img [src]="gif.images.downsized_medium.url" [alt]="gif.title" class="card-img-top">
+      <img
+        [src]="gif.images.downsized_medium.url"
+        [alt]="gif.title"
+        class="card-img-top"
+      >
+
       <div class="card-body text-white">
-        <p class="card-text">
-          {{gif.title}}
-        </p>
+        @if(gif.title != ''){
+          <p class="card-text">
+            {{gif.title}}
+          </p>
+        }
+        @else {
+          <p class="card-text">
+            GIF sin título.
+          </p>
+        }
       </div>
     </div>
-  </div>
+  </div> -->
+  <gif-card
+    *ngFor="let gif of gifs"
+    [gif]="gif"
+    class="col-md-3 col-sm-6">
+  </gif-card>
 </div>
